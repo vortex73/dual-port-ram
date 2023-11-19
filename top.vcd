@@ -1,0 +1,106 @@
+$date
+	Tue Nov 14 18:07:31 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top $end
+$var wire 4 ! dob [3:0] $end
+$var wire 4 " doa [3:0] $end
+$var reg 5 # addra [4:0] $end
+$var reg 5 $ addrb [4:0] $end
+$var reg 1 % clk1 $end
+$var reg 1 & clk2 $end
+$var reg 4 ' dia [3:0] $end
+$var reg 4 ( dib [3:0] $end
+$var reg 1 ) wea $end
+$var reg 1 * web $end
+$scope module uut $end
+$var wire 5 + addra [4:0] $end
+$var wire 5 , addrb [4:0] $end
+$var wire 1 % clk1 $end
+$var wire 1 & clk2 $end
+$var wire 4 - dia [3:0] $end
+$var wire 4 . dib [3:0] $end
+$var wire 4 / doa [3:0] $end
+$var wire 4 0 dob [3:0] $end
+$var wire 1 ) wea $end
+$var wire 1 * web $end
+$var reg 5 1 read_addra [4:0] $end
+$var reg 5 2 read_addrb [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx 2
+bx 1
+bx 0
+bx /
+b1011 .
+b1010 -
+b111 ,
+b110 +
+1*
+1)
+b1011 (
+b1010 '
+0&
+0%
+b111 $
+b110 #
+bx "
+bx !
+$end
+#5
+b1010 "
+b1010 /
+b110 1
+1%
+#10
+b1011 !
+b1011 0
+b111 2
+1&
+#15
+0%
+#20
+0&
+#25
+1%
+#30
+1&
+#35
+0%
+#40
+0&
+#45
+1%
+#50
+1&
+#55
+0%
+#60
+0&
+#65
+1%
+#70
+1&
+#75
+0%
+#80
+0&
+#85
+1%
+#90
+1&
+#95
+0%
+#100
+0&
