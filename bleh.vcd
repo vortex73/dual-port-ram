@@ -1,5 +1,5 @@
 $date
-	Tue Nov 14 18:07:52 2023
+	Wed Nov 22 10:53:25 2023
 $end
 $version
 	Icarus Verilog
@@ -10,8 +10,8 @@ $end
 $scope module pff $end
 $var wire 4 ! dob [3:0] $end
 $var wire 4 " doa [3:0] $end
-$var reg 5 # addra [4:0] $end
-$var reg 5 $ addrb [4:0] $end
+$var reg 4 # addra [3:0] $end
+$var reg 4 $ addrb [3:0] $end
 $var reg 1 % clk1 $end
 $var reg 1 & clk2 $end
 $var reg 4 ' dia [3:0] $end
@@ -19,8 +19,8 @@ $var reg 4 ( dib [3:0] $end
 $var reg 1 ) wea $end
 $var reg 1 * web $end
 $scope module uut $end
-$var wire 5 + addra [4:0] $end
-$var wire 5 , addrb [4:0] $end
+$var wire 4 + addra [3:0] $end
+$var wire 4 , addrb [3:0] $end
 $var wire 1 % clk1 $end
 $var wire 1 & clk2 $end
 $var wire 4 - dia [3:0] $end
@@ -29,8 +29,8 @@ $var wire 4 / doa [3:0] $end
 $var wire 4 0 dob [3:0] $end
 $var wire 1 ) wea $end
 $var wire 1 * web $end
-$var reg 5 1 read_addra [4:0] $end
-$var reg 5 2 read_addrb [4:0] $end
+$var reg 4 1 read_addra [3:0] $end
+$var reg 4 2 read_addrb [3:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -58,49 +58,97 @@ b110 #
 bx "
 bx !
 $end
-#5
+#3
 b1010 "
 b1010 /
 b110 1
 1%
-#10
+#4
 b1011 !
 b1011 0
 b111 2
 1&
+#5
+b1101 (
+b1101 .
+b1100 '
+b1100 -
+#7
+0%
+#8
+0&
+#11
+b1100 "
+b1100 /
+1%
+#12
+b1101 !
+b1101 0
+1&
 #15
 0%
-#20
+b1011 (
+b1011 .
+b1010 '
+b1010 -
+0*
+0)
+#16
 0&
-#25
+#19
 1%
-#30
+#20
 1&
+b1101 (
+b1101 .
+b1100 '
+b1100 -
+#23
+0%
+#24
+0&
+#27
+1%
+#28
+1&
+#30
+b1 (
+b1 .
+b0 '
+b0 -
+b1001 $
+b1001 ,
+b10 #
+b10 +
+1)
+#31
+0%
+#32
+0&
 #35
+b0 "
+b0 /
+b10 1
+1%
+#36
+bx !
+bx 0
+b1001 2
+1&
+#39
 0%
 #40
 0&
-#45
+1*
+0)
+#43
 1%
+#44
+b1 !
+b1 0
+1&
+#47
+0%
+#48
+0&
 #50
-1&
-#55
-0%
-#60
-0&
-#65
-1%
-#70
-1&
-#75
-0%
-#80
-0&
-#85
-1%
-#90
-1&
-#95
-0%
-#100
-0&
